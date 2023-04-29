@@ -1,0 +1,142 @@
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -Moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "open sans", sans-serif;
+    background: linear-gradient(#200016,#10001f);
+    height: 100vh;
+}
+ul {
+    list-style: none;
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Small */
+@media(min-width:768px){
+    .container{
+        width: 750px;
+    }
+}
+/* Medium */
+@media(min-width:992px){
+    .container{
+        width: 970px;
+    }
+}
+/* Large */
+@media(min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+}
+/* End Global Rules */
+/* Start header */
+header {
+    position: relative;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+header .navbar{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px;
+}
+.navbar .logo{
+    color: #fff;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+}
+.navbar ul li{
+    margin-left: 30px;
+}
+.navbar ul li a{
+    font-size: 15px;
+    color: #fff;
+    padding: 6px 15px;
+}
+.navbar ul li a:hover,
+.navbar ul li a.active{
+    color: #200016;
+    background-color: #fff;
+    border-radius: 20px;
+}
+/* End header */
+/* Start Imgs */
+section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+section .imgs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section img{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+#moon{
+    mix-blend-mode: screen;
+    transform: translateY(105px);
+}
+section .welcome{
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    transform: translateY(-140px);
+}
+section::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(to top, #200016, transparent);
+}
+/* End Imgs */
+/* start Text */
+.content{
+    color: #fff;
+    padding: 30px;
+    width: 80%;
+}
+.content h2{
+    margin: 20px;
+    font-size: 30px;
+}
+.content p {
+    margin: 20PX;
+    font-size: 17PX;
+    line-height: 1.5;
+}
+/* End Text */
